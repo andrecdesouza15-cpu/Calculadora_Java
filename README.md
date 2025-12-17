@@ -69,7 +69,7 @@ Este projeto tem caráter educacional. Em um cenário de produção, algumas dec
 ------------------------------------
 Abaixo está o diagrama de classes que representa a estrutura do projeto, evidenciando a utilização de abstração, herança e polimorfismo na organização das operações aritméticas:
 
-![Diagrama_Classes_UML.png](Diagrama_Classes_UML.png)
+<img width="1081" height="456" alt="image" src="https://github.com/user-attachments/assets/2fac86f4-0d37-4551-9074-2c44f74ffb2c" />
 
 
 ## Como executar
