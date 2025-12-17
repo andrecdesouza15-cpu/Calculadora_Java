@@ -14,10 +14,17 @@ public class HistoricoCalculos { //Classe para adicionar e armazenar o historico
     }
 
     public void listarHistorico() { //Funcao para listar todos os calculos efetuados enquanto o programa executado
-        System.out.println("----------------------");
+        System.out.println(----------------------------");
+
+        if(historico == null || historico.isEmpty()) {
+            System.out.println("O histórico de cálculos está vazio!");
+            return;
+        }
+        
         System.out.println("Histórico de Cálculos:");
         for(Calculadora calculadora : historico) {
             calculadora.info();
         }
     }
+
 }
