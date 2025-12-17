@@ -1,0 +1,63 @@
+@startuml
+class HistoricoCalculos {
+    - historico: List<Calculadora>
+    + adicionar(Calculadora): void
+    + listarHistorico(): void
+}
+
+abstract class Calculadora {
+    # resultado: double
+    {abstract} + calcular(): double
+    {abstract} + info(): void
+}
+
+class Adicao {
+    parcela1: double
+    parcela2: double
+    + calcular(): double
+    + info(): void
+}
+
+class Subtracao {
+    minuendo: double
+    subtraendo: double
+    + calcular(): double
+    + info(): void
+}
+
+class Multiplicacao {
+    fator1: double
+    fator2: double
+    + calcular(): double
+    + info(): void
+}
+
+class Divisao {
+    dividendo: double
+    divisor: double
+    resto: double
+    + calcular(): double
+    + info(): void
+}
+
+class Potencia {
+    base: double
+    expoente: double
+    + calcular(): double
+    + info(): void
+}
+
+class RaizQuadrada {
+    radicando: double
+    + calcular(): double
+    + info(): void
+}
+
+Calculadora <|-- Adicao
+Calculadora <|-- Subtracao
+Calculadora <|-- Multiplicacao
+Calculadora <|-- Divisao
+Calculadora <|-- Potencia
+Calculadora <|-- RaizQuadrada
+HistoricoCalculos o-- Calculadora
+@enduml
